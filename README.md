@@ -1,4 +1,4 @@
-# 🧱 C# Clean Architecture Web API Template
+# Architecture Web API 
 
 A modular and scalable ASP.NET Core Web API project following **Clean Architecture** principles. Built with separation of concerns, AutoMapper for object mapping, and Entity Framework Core for data access.
 
@@ -14,13 +14,13 @@ This template is designed for building robust and testable Web APIs using ASP.NE
 
 ## 🧱 Architecture
 
-[Client] ---
+## [Client] 
 ↓
-[Presentation Layer] → Controllers, API ---
+## [Presentation Layer] → Controllers, API ---
 ↓
-[Application Layer] → Services, Use Cases ---
+## [Application Layer] → Services, Use Cases ---
 ↓
-[Domain Layer] → Business Models, Interfaces ---
+## [Domain Layer] → Business Models, Interfaces ---
 ↓
-[Infrastructure Layer] → EF Core, APIs, Logging 
+## [Infrastructure Layer] → EF Core, APIs, Logging 
 
