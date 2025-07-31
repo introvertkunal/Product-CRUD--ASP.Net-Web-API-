@@ -16,11 +16,45 @@ This template is designed for building robust and testable Web APIs using ASP.NE
 
 ## [Client] 
 ↓
-## [Presentation Layer] → Controllers, API ---
+## [Presentation Layer] → Controllers, API 
 ↓
-## [Application Layer] → Services, Use Cases ---
+## [Application Layer] → Services, Use Cases 
 ↓
-## [Domain Layer] → Business Models, Interfaces ---
+## [Domain Layer] → Business Models, Interfaces 
 ↓
 ## [Infrastructure Layer] → EF Core, APIs, Logging 
 
+
+---
+
+## ✨ Technologies Used
+
+| Concern         | Technology         |
+|----------------|--------------------|
+| Framework       | ASP.NET Core       |
+| Dependency Injection | Built-in DI Container |
+| Object Mapping  | AutoMapper         |
+| ORM             | Entity Framework Core |
+| Testing         | xUnit, Moq         |
+| Documentation   | Swagger (Swashbuckle) |
+| Logging         | Serilog (optional) |
+
+---
+
+## 🔁 Object Mapping (AutoMapper)
+
+Object mapping helps convert between:
+- `CreateProductRequest` ⇄ `Product`  
+- `Product` ⇄ `ProductResponse`
+
+### 🔧 Example Mapping Profile
+```csharp
+public class MappingProfile : Profile
+{
+    public MappingProfile()
+    {
+        CreateMap<Product, ProductResponse>();
+        CreateMap<CreateProductRequest, Product>();
+        CreateMap<UpdateProductRequest, Product>();
+    }
+}
