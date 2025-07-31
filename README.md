@@ -46,6 +46,10 @@ This template is designed for building robust and testable Web APIs using ASP.NE
 Object mapping helps convert between:
 - `CreateProductRequest` ⇄ `Product`  
 - `Product` ⇄ `ProductResponse`
+• Reduces repetitive code by automating object-to-object conversions.  
+• Keeps controllers and services clean by handling transformations in one place.  
+• Centralizes mapping logic, making it easier to maintain and update.  
+• Enables a clear separation between domain models and data transfer objects (DTOs).
 
 ### 🔧 Example Mapping Profile
 ```csharp
@@ -59,8 +63,5 @@ public class MappingProfile : Profile
     }
 }
 
-• Reduces repetitive code by automating object-to-object conversions.  
-• Keeps controllers and services clean by handling transformations in one place.  
-• Centralizes mapping logic, making it easier to maintain and update.  
-• Enables a clear separation between domain models and data transfer objects (DTOs).
+
 
