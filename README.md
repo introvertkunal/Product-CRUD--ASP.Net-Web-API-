@@ -58,3 +58,9 @@ public class MappingProfile : Profile
         CreateMap<UpdateProductRequest, Product>();
     }
 }
+
+• Reduces repetitive code by automating object-to-object conversions.  
+• Keeps controllers and services clean by handling transformations in one place.  
+• Centralizes mapping logic, making it easier to maintain and update.  
+• Enables a clear separation between domain models and data transfer objects (DTOs).
+
