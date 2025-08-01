@@ -18,11 +18,15 @@ This template is designed for building robust and testable Web APIs using ASP.NE
 ↓
 ## [Presentation Layer] → Controllers, API 
 ↓
+## [Infrastructure Layer] → EF Core, APIs, Logging 
+↓
 ## [Application Layer] → Services, Use Cases 
 ↓
 ## [Domain Layer] → Business Models, Interfaces 
-↓
-## [Infrastructure Layer] → EF Core, APIs, Logging 
+
+
+<img width="807" height="583" alt="image" src="https://github.com/user-attachments/assets/f271a78f-8e5e-4c3a-84b3-9e2cf2360533" />
+
 
 
 ---
